@@ -75,7 +75,7 @@ h1,
 	flex-direction: column;
 	padding: 3%;
 	gap: 20px;
-	background: #ffefd7;
+	background: #eee;
 	border-radius: 5px;
 	box-shadow: 1px 1px 3px 1px #704e1b;
 }
@@ -94,6 +94,12 @@ h1,
 .details {
 	display: flex;
 	justify-content: space-between;
+}
+
+.details p {
+	background: #895e43;
+	padding: 5px;
+	color: white;
 }
 
 img {
@@ -145,11 +151,12 @@ button.active {
 }
 
 summary {
-	background-color: #a2804d;
+	background-color: #eee;
 	padding: 20px;
 	font-size: larger;
 	margin-bottom: 10px;
 	border-radius: 5px;
+	box-shadow: 1px 1px 3px 1px #704e1b;
 }
 
 .response {
