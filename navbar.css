@@ -7,8 +7,9 @@
 body {
 	margin: 0;
 }
-ul {
-	list-style-type: none;
+ul{
+    list-style-type: none;
+    padding: 0;
 }
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
@@ -73,11 +74,14 @@ a {
 .flex.hcenter {
 	justify-content: center;
 }
-input {
-	padding: 8px 15px;
-	border-radius: 5px;
-	border: 2px solid grey;
-	font-size: 16px;
+.flex.flex-col{
+    flex-direction: column;
+}
+input{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    font-size: 16px;
 }
 input:focus {
 	border: 2px solid #895e43;
