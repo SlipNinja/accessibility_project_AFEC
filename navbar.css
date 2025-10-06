@@ -2,10 +2,13 @@
 *, *::before, *::after {
   box-sizing: border-box;
   outline: none;
-  font-size: 16px;
-  margin: 0;
 }
-
+body{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -41,7 +44,7 @@ a{
 }
 .flex{
     display: flex;
-    gap: 15px;
+    gap: 30px 15px;
 }
 .flex.vflex{
     flex-direction: column;
@@ -53,6 +56,9 @@ a{
 .flex.hspacing{
     justify-content: space-around;
 }
+.flex.sp-between{
+    justify-content: space-between;
+}
 .flex.hcenter{
     justify-content: center;
 }
@@ -60,18 +66,20 @@ input{
     padding: 8px 15px;
     border-radius: 5px;
     border: 2px solid grey;
+    font-size: 16px;
 }
 input:focus{
-    border: 2px solid #a47050;
+    border: 2px solid #895E43;
 }
 a.button{
     padding: 9px 15px;
-    border: 1px solid #a47050;
+    border: 1px solid #895E43;
     border-radius: 5px;
     transition: all 0.2s;
+    display: inline-block;
 }
 a.button:hover, a.button[aria-current="page"], a.button.active{
-    background: #a47050;
+    background: #895E43;
     color: white;
 }
 
