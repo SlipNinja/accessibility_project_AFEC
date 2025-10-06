@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="navbar.css" rel="stylesheet" />
+    <link href="singlecourse.css" rel="stylesheet" />
+    <title>Formation</title>
+</head>
+
+<body>
+    <header class="flex vflex">
+        <div class="row flex vcenter hspacing">
+            <div id="logo">
+                <a href="/" aria-label="Accéder à la page d'accueil">
+                    <img src="logo.png" alt="Logo of the website" />
+                </a>
+            </div>
+            <nav id="navbar-links" class="flex" role="navigation">
+                <a href="index.html"   class="button" aria-label="Accéder à la page d'accueil">Accueil</a>
+                <a href="courses.html" class="button" aria-label="Accéder à la page de Courses">Liste des formations</a>
+                <a href="aboutus.html" class="button" aria-label="Accéder à la page A propos">À propos</a>
+                <a href="contact.html" class="button" aria-label="Accéder à la page de Contact">Contact</a>
+            </nav>
+            <div id="lang-selector">
+                <a href="/" class="button" aria-label="Changer la langue" >FR</a>
+            </div>
+        </div>
+        <div class="row flex vcenter hcenter">
+            <input type="text" placeholder="Search" aria-label="Chercher une formation"/>
+            <a href="/courses.html" class="button">Voir tous nos courses</a>
+        </div>
+    </header>
+
+
+
+    <main id="content">
+        <h1>HTML5</h1>
+        <ul class="flex" id="tags" role="list">
+            <li role="listitem">Web Developpement</li>
+            <li role="listitem">Design</li>
+        </ul>
+
+        <div class="row flex main-content">
+            <section class="flex flex-col">
+                <p>
+                    Le HyperText Markup Language, généralement abrégé HTML ou, dans sa dernière version, HTML5, est le langage de balisage conçu pour écrire les pages web. Il s'agit d'un format ouvert très utilisé en informatique.
+Comme son nom l'indique, HTML permet d’écrire de l’hypertexte. Il permet aussi de structurer sémantiquement le texte, de créer des formulaires de saisie, d’inclure des ressources multimédias dont des images, des vidéos et des programmes informatiques. Il a été conçu pour créer des documents interopérables avec des équipements informatiques variés ; l’accessibilité du web est ainsi accrue en supportant des équipements destinés aux handicapés[1].
+HTML est souvent utilisé conjointement avec le langage de programmation JavaScript et des feuilles de style en cascade (CSS). Il est inspiré du Standard Generalized Markup Language (SGML). 
+                </p>
+                <img src="img/html-code.png" alt="HTML code example" aria-hidden="true" />
+                <button aria-label="S'inscrire a la formation">S'inscrire</button>
+            </section>
+            <section>
+                <ul role="menu">
+                    <li role="menuitem">
+                        <span>
+                            <img src="icons/world.png" aria-hidden="true">
+                        </span>
+                        <span>
+                            <h4>Contenu Peda 1</h4>
+                            Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.
+                        </span>
+                    </li>
+                    <li role="menuitem">
+                        <span>
+                            <img src="icons/refresh.png" aria-hidden="true">
+                        </span>
+                        <span>
+                            <h4>Contenu Peda 2</h4>
+                            Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.
+                        </span>
+                    </li>
+                    <li role="menuitem">
+                        <span>
+                            <img src="icons/star.png" aria-hidden="true">
+                        </span>
+                        <span>
+                            <h4>Contenu Peda 3</h4>
+                            Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae.
+                        </span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>

@@ -1,0 +1,28 @@
+#content{
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+.main-content>section{
+    flex: 1 1 0px;
+}
+ul[role="menu"]{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+li[role="menuitem"]{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+li[role="menuitem"] img{
+    width: 20px;
+}
+li[role="listitem"]{
+    text-decoration: underline;
+}
+button{
+    padding: 10px;
+    cursor: pointer;
+}
