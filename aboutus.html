@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+        <link href="navbar.css" rel="stylesheet" />
+        <link href="aboutus.css" rel="stylesheet" />
+		<title>Formation</title>
+	</head>
+
+	<body>
+        <header class="flex vflex">
+        <div class="row flex vcenter hspacing">
+            <div id="logo">
+                <a href="/" aria-label="Accéder à la page d'accueil">
+                    <img src="logo.png" alt="Logo of the website" />
+                </a>
+            </div>
+            <nav id="navbar-links" class="flex" role="navigation">
+                <a href="index.html"   class="button" aria-label="Accéder à la page d'accueil">Accueil</a>
+                <a href="courses.html" class="button" aria-label="Accéder à la page de Courses">Liste des formations</a>
+                <a href="aboutus.html" class="button" aria-label="Accéder à la page A propos"  aria-current="page">À propos</a>
+                <a href="contact.html" class="button" aria-label="Accéder à la page de Contact">Contact</a>
+            </nav>
+            <div id="lang-selector">
+                <a href="/" class="button" aria-label="Changer la langue" >FR</a>
+            </div>
+        </div>
+        <div class="row flex vcenter hcenter">
+            <input type="text" placeholder="Search" aria-label="Chercher une formation"/>
+            <a href="/courses" class="button">Voir tous nos courses</a>
+        </div>
+    </header>
+    <main id="content">
+                <ul role="menu">
+                    <li role="menuitem">
+                        <span>
+                            <img src="icons/world.png" aria-hidden="true">
+                        </span>
+                        <span>
+                            <h4>Contenu Peda 1</h4>
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae. </p>
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu.</p>
+                        </span>
+                    </li>
+                    <li role="menuitem">
+                        <span>
+                            <img src="icons/refresh.png" aria-hidden="true">
+                        </span>
+                        <span>
+                            <span>
+                            <h4>Contenu Peda 2</h4>
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae. </p>
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu.</p>
+                        </span>
+                        </span>
+                    </li>
+                    <li role="menuitem">
+                        <span>
+                            <img src="icons/star.png" aria-hidden="true">
+                        </span>
+                        <span>
+                            <span>
+                            <h4>Contenu Peda 3</h4>
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae. </p>
+                            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu.</p>
+                        </span>
+                        </span>
+                    </li>
+                </ul>
+    </main>
+    </body>
+</html>
