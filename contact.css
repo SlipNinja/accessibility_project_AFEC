@@ -9,3 +9,15 @@ button {
 section.flex{
   gap: 15px;
 }
+
+.errormessage {
+  display: none;
+}
+
+[aria-invalid="true"] {
+  outline: 2px solid red;
+}
+
+[aria-invalid="true"] ~ .errormessage {
+  display: block;
+}
