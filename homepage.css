@@ -48,17 +48,24 @@ h1,
 }
 
 #main_courses,
-#main_videos {
+#main_videos,
+#faq {
 	display: flex;
 	flex-direction: column;
 }
 
 #course_list,
-#video_list {
+#video_list,
+#question_list {
 	display: flex;
 	justify-content: space-around;
 	gap: 30px;
 	padding: 30px;
+}
+
+#question_list {
+	flex-direction: column;
+	align-items: center;
 }
 
 .course,
@@ -117,4 +124,30 @@ button.active {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.question {
+	width: 50%;
+}
+
+summary {
+	background-color: #a2804d;
+	padding: 20px;
+	font-size: larger;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.response {
+	display: flex;
+	justify-content: center;
+	background-color: #fff9f0;
+}
+
+.response p {
+	width: 80%;
+}
+
+#faq > p {
+	text-align: center;
 }
