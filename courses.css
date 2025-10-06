@@ -1,0 +1,50 @@
+main{
+    padding: 50px 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#sidebar{
+    width: 250px;
+    padding: 0px 20px;
+}
+#courses{
+    flex: 1;
+}
+#courses>div{
+    flex-wrap: wrap;
+}
+.course{
+    flex: 0 0 calc(33.3333% - 15px);
+    background: #eee;
+    padding: 10px 15px;
+}
+.course img{
+    width: 200px;
+    margin: auto;
+}
+.course .desc{
+    height: 85px;
+    overflow: scroll;
+}
+.course p span{
+    background: #895E43;
+    padding: 5px;
+    color: white;
+}
+#pagination ul{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+#sidebar ul{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-direction: column;
+}
+li.active{
+    text-decoration: underline;
+}
