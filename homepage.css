@@ -1,0 +1,56 @@
+#content {
+	display: flex;
+	flex-direction: column;
+}
+
+#presentation {
+	background-color: aqua;
+}
+
+.content_element {
+	flex: 2;
+	display: flex;
+	background-color: blue;
+}
+
+.presentation_element {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	padding: 1%;
+}
+
+#hero_img {
+	flex: 2;
+}
+
+#main_courses {
+	display: flex;
+	flex-direction: column;
+}
+
+#course_list {
+	display: flex;
+}
+
+.course {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 3%;
+}
+
+.course_elt {
+	flex: 1;
+}
+
+.details {
+	display: flex;
+	justify-content: space-between;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
