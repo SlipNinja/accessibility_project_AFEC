@@ -1,13 +1,14 @@
 /* 1. Use a more-intuitive box-sizing model */
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-	outline: none;
-	font-size: 16px;
-	margin: 0;
+*, *::before, *::after {
+  box-sizing: border-box;
+  outline: none;
 }
-
+body{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
 	html {
@@ -51,9 +52,9 @@ a {
 * {
 	font-family: Arial, Helvetica, sans-serif;
 }
-.flex {
-	display: flex;
-	gap: 15px;
+.flex{
+    display: flex;
+    gap: 30px 15px;
 }
 .flex.vflex {
 	flex-direction: column;
@@ -65,28 +66,31 @@ a {
 .flex.hspacing {
 	justify-content: space-around;
 }
-.flex.hcenter {
-	justify-content: center;
+.flex.sp-between{
+    justify-content: space-between;
 }
-input {
-	padding: 8px 15px;
-	border-radius: 5px;
-	border: 2px solid grey;
+.flex.hcenter{
+    justify-content: center;
 }
-input:focus {
-	border: 2px solid #a47050;
+input{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    font-size: 16px;
 }
-a.button {
-	padding: 9px 15px;
-	border: 1px solid #a47050;
-	border-radius: 5px;
-	transition: all 0.2s;
+input:focus{
+    border: 2px solid #895E43;
 }
-a.button:hover,
-a.button[aria-current="page"],
-a.button.active {
-	background: #a47050;
-	color: white;
+a.button{
+    padding: 9px 15px;
+    border: 1px solid #895E43;
+    border-radius: 5px;
+    transition: all 0.2s;
+    display: inline-block;
+}
+a.button:hover, a.button[aria-current="page"], a.button.active{
+    background: #895E43;
+    color: white;
 }
 
 header {
