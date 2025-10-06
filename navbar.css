@@ -1,85 +1,99 @@
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-  box-sizing: border-box;
-  outline: none;
-  font-size: 16px;
-  margin: 0;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	outline: none;
+	font-size: 16px;
+	margin: 0;
 }
 
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
+	html {
+		interpolate-size: allow-keywords;
+	}
 }
 
 body {
-  /* 5. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
+	/* 5. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+	text-decoration: none;
+	color: black;
 }
 
 /* End CSS Reset */
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+	font-family: Arial, Helvetica, sans-serif;
 }
-.flex{
-    display: flex;
-    gap: 15px;
+.flex {
+	display: flex;
+	gap: 15px;
 }
-.flex.vflex{
-    flex-direction: column;
-    gap: 50px;
+.flex.vflex {
+	flex-direction: column;
+	gap: 50px;
 }
-.flex.vcenter{
-    align-items: center;
+.flex.vcenter {
+	align-items: center;
 }
-.flex.hspacing{
-    justify-content: space-around;
+.flex.hspacing {
+	justify-content: space-around;
 }
-.flex.hcenter{
-    justify-content: center;
+.flex.hcenter {
+	justify-content: center;
 }
-input{
-    padding: 8px 15px;
-    border-radius: 5px;
-    border: 2px solid grey;
+input {
+	padding: 8px 15px;
+	border-radius: 5px;
+	border: 2px solid grey;
 }
-input:focus{
-    border: 2px solid #a47050;
+input:focus {
+	border: 2px solid #a47050;
 }
-a.button{
-    padding: 9px 15px;
-    border: 1px solid #a47050;
-    border-radius: 5px;
-    transition: all 0.2s;
+a.button {
+	padding: 9px 15px;
+	border: 1px solid #a47050;
+	border-radius: 5px;
+	transition: all 0.2s;
 }
-a.button:hover, a.button[aria-current="page"], a.button.active{
-    background: #a47050;
-    color: white;
+a.button:hover,
+a.button[aria-current="page"],
+a.button.active {
+	background: #a47050;
+	color: white;
 }
 
-header{
-    background: #fff9f0;
-    padding: 10px 0;
+header {
+	background: #fff9f0;
+	padding: 10px 0;
 }
-header img{
-    width: 100px;
-    height: auto;
+header img {
+	width: 100px;
+	height: auto;
 }
