@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" href="homepage.css" />
+        <link href="navbar.css" rel="stylesheet" />
 		<title>Formation</title>
 	</head>
 
 	<body>
-		<div id="header"></div>
+		<header class="flex vflex">
+        <div class="row flex vcenter hspacing">
+            <div id="logo">
+                <a href="/">
+                    <img src="logo.png" alt="Logo of the website" />
+                </a>
+            </div>
+            <nav id="navbar-links" class="flex">
+                <a href="/" target="_blank" class="button" aria-current="page">Accueil</a>
+                <a href="/courses" class="button" target="_blank">Liste des formations</a>
+                <a href="/aboutus" class="button" target="_blank">À propos</a>
+                <a href="/contact" class="button" target="_blank">Contact</a>
+            </nav>
+            <div id="lang-selector">
+                <a href="/" class="button"">FR</a>
+            </div>
+        </div>
+        <div class="row flex vcenter hcenter">
+            <input type="text" placeholder="Search" />
+            <a href="/courses" class="button">Voir tous nos courses</a>
+        </div>
+        
+    </header>
 		<div id="content">
 			<div class="content_element" id="presentation">
 				<div class="presentation_element">
