@@ -1,40 +1,54 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link href="navbar.css" rel="stylesheet" />
-    <link href="courses.css" rel="stylesheet" />
-    <title>Courses</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link href="navbar.css" rel="stylesheet" />
+		<link href="courses.css" rel="stylesheet" />
+		<title>Courses</title>
+	</head>
 
-<body>
-    <header class="flex vflex">
-        <div class="row flex vcenter hspacing">
-            <div id="logo">
-                <a href="index.html" aria-label="Accéder à la page d'accueil">
-                    <img src="logo.png" alt="Logo of the website" />
-                </a>
-            </div>
-            <nav id="navbar-links" title="Primary Menu">
-                <ul class="flex">
-                    <li><a href="index.html"   class="button">Accueil</a></li>
-                    <li><a href="courses.html" class="button" aria-current="page">Liste des formations</a></li>
-                    <li><a href="aboutus.html" class="button">À propos</a></li>
-                    <li><a href="contact.html" class="button">Contact</a></li>
-                </ul>
-            </nav>
-            <div id="lang-selector">
-                <a href="/" class="button" aria-label="Changer la langue" >FR</a>
-            </div>
-        </div>
-        <div class="row flex vcenter hcenter">
-            <input type="text" placeholder="Search a course"/>
-            <a href="/courses.html" class="button">Voir tous nos courses</a>
-        </div>
-    </header>
-
-
+	<body>
+		<header class="flex vflex">
+			<div class="row flex vcenter hspacing">
+				<div id="logo">
+					<a
+						href="index.html"
+						aria-label="Accéder à la page d'accueil"
+					>
+						<img src="logo.png" alt="Logo of the website" />
+					</a>
+				</div>
+				<nav id="navbar-links" title="Primary Menu">
+					<ul class="flex">
+						<li><a href="index.html" class="button">Accueil</a></li>
+						<li>
+							<a
+								href="courses.html"
+								class="button"
+								aria-current="page"
+								>Liste des formations</a
+							>
+						</li>
+						<li>
+							<a href="aboutus.html" class="button">À propos</a>
+						</li>
+						<li>
+							<a href="contact.html" class="button">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="lang-selector">
+					<a href="/" class="button" aria-label="Changer la langue"
+						>FR</a
+					>
+				</div>
+			</div>
+			<div class="row flex vcenter hcenter">
+				<input type="text" placeholder="Search a course" />
+				<a href="./courses.html" class="button">Voir tous nos cours</a>
+			</div>
+		</header>
 
     <main id="content">
         <h1 class="text-center">Nos courses</h1>
