@@ -1,24 +1,23 @@
-#content{
-    max-width: 1200px;
-    margin: auto;
+#content {
+	max-width: 1200px;
+	margin: auto;
 }
-ul[role="menu"]{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+#contenu {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
 }
-li[role="menuitem"]{
-    display: flex;
-    align-items: center;
-    gap: 30px;
+
+.contenu_elt {
+	display: flex;
+	align-items: center;
+	gap: 30px;
 }
-li[role="menuitem"] img{
-    width: 20px;
+li img {
+	width: 20px;
 }
-li[role="listitem"]{
-    text-decoration: underline;
-}
-button{
-    padding: 10px;
-    cursor: pointer;
+
+button {
+	padding: 10px;
+	cursor: pointer;
 }
