@@ -20,6 +20,10 @@ h3 {
 	padding-top: 40px;
 }
 
+.hidden {
+	display: none;
+}
+
 .content_element {
 	flex: 2;
 	display: flex;
