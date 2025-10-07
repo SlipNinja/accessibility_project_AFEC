@@ -4,192 +4,289 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" href="homepage.css" />
-        <link href="navbar.css" rel="stylesheet" />
+		<link href="navbar.css" rel="stylesheet" />
 		<title>Formation</title>
 	</head>
 
 	<body>
-        <header class="flex vflex">
-            <div class="row flex vcenter hspacing">
-                <div id="logo">
-                    <a href="index.html" aria-label="Accéder à la page d'accueil">
-                        <img src="logo.png" alt="Logo of the website" />
-                    </a>
-                </div>
-                <nav id="navbar-links" class="flex" role="navigation">
-                    <a href="index.html"   class="button" aria-label="Accéder à la page d'accueil" aria-current="page">Accueil</a>
-                    <a href="courses.html" class="button" aria-label="Accéder à la page de Courses">Liste des formations</a>
-                    <a href="aboutus.html" class="button" aria-label="Accéder à la page A propos">À propos</a>
-                    <a href="contact.html" class="button" aria-label="Accéder à la page de Contact">Contact</a>
-                </nav>
-                <div id="lang-selector">
-                    <a href="/" class="button" aria-label="Changer la langue" >FR</a>
-                </div>
-            </div>
-            <div class="row flex vcenter hcenter">
-                <input type="text" placeholder="Search" aria-label="Chercher une formation"/>
-                <a href="/courses" class="button">Voir tous nos cours</a>
-            </div>
-            
-        </header>
-        <div id="content">
-            <div class="content_element" id="presentation">
-                <div class="presentation_element">
-                    <h1>
-                        We are there for you !
-                    </h1>
-                    <p id="hero_text">
-                        For larger organizations and businesses, Web development teams can consist of hundreds of Web developers and follow standard methods while developing Web sites. Web development may be a collaborative effort between departments rather than the domain of a designated department. There are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer. Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers. Since the commercialization of the Web, the industry has boomed and has become one of the most used technologies ever. That is where our website comes from, that need to help you find your place in this the best way possible !
-                    </p>
-                </div>
-                <div
-                    class="presentation_element"
-                    class="img_container"
-                    id="hero_img"
-                >
-                    <img
-                        src="./img/happy.jpg"
-                        alt="Happy girl jumping"
-                        aria-hidden="true"
-                    />
-                </div>
-            </div>
-            <div class="content_element" id="main_courses">
-                <h2>Popular courses</h2>
-                <div id="course_list">
-                    <div class="course">
-                        <div class="img_container" class="course_elt">
-                            <img
-                                src="./html5.png"
-                                aria-hidden="true"
-                                alt="HTML5 logo"
-                            />
-                        </div>
-                        <h4 class="course_elt">HTML Course</h4>
-                        <p class="course_elt">
-                            This is a course about html and it's cool
-                        </p>
-                        <button type="button" onclick="location.href='singlecourse.html'" aria-label="Details of the course" class="course_elt">See more</button>
-                        <div class="details" class="course_elt">
-                            <p>07/10/2025</p>
-                            <p>250€</p>
-                        </div>
-                    </div>
-                    <div class="course">
-                        <div class="img_container" class="course_elt">
-                            <img
-                                src="./css.png"
-                                aria-hidden="true"
-                                alt="CSS logo"
-                            />
-                        </div>
-                        <h4 class="course_elt">CSS Course</h4>
-                        <p class="course_elt">
-                            This is a course about CSS and it rocks
-                        </p>
-                        <button type="button" onclick="location.href='singlecourse.html'" aria-label="Details of the course" class="course_elt">See more</button>
-                        <div class="details" class="course_elt">
-                            <p>07/10/2025</p>
-                            <p>250€</p>
-                        </div>
-                    </div>
-                    <div class="course">
-                        <div class="img_container" class="course_elt">
-                            <img
-                                src="./js.png"
-                                aria-hidden="true"
-                                alt="Javascript logo"
-                            />
-                        </div>
-                        <h4 class="course_elt">Javascript Course</h4>
-                        <p class="course_elt">
-                            This is a course about javascript and it's huge
-                        </p>
-                        <button type="button" onclick="location.href='singlecourse.html'" aria-label="Details of the course" class="course_elt">See more</button>
-                        <div class="details" class="course_elt">
-                            <p>07/10/2025</p>
-                            <p>250€</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="more_button">
-                    <button type="button" onclick="location.href='courses.html'" aria-label="See all the courses">More courses</button>
-                </div>
-            </div>
-            <div class="content_element" id="main_videos">
-                <h2>Our videos</h2>
-                <div id="video_list">
-                    <div class="video">
-                        <div class="vid_container" class="video_elt">
-                            <iframe title="Create collapsible sidebar nav in figma" src="https://www.youtube.com/embed/CzOgO51u-j4"></iframe>
-                        </div>
-                        <h3 class="video_elt">Create collapsible sidebar nav in figma</h3>
-                        <p class="video_elt">
-                            Learn how to create some fancy tools in Figma !
-                        </p>
-                    </div>
-                    <div class="video">
-                        <div class="vid_container" class="video_elt">
-                            <iframe title="Maitriser chat gpt en 10 minutes" src="https://www.youtube.com/embed/oeli5xkFZJo"></iframe>
-                        </div>
-                        <h3 class="video_elt">Maitriser chat gpt en 10 minutes</h4>
-                        <p class="video_elt">
-                            Improve your skills and impress all your friend with those tricks !
-                        </p>
-                    </div>
-                </div>
-                <div class="more_button">
-                    <button aria-label="See all the videos">More videos</button>
-                </div>
-            </div>
-            <div class="content_element" id="faq">
-                <!--https://www.w3.org/TR/html-aria/#details for aria semantic on details tag-->
-                <h2>F. A. Q.</h2>
-                <p>Here are some frequently asked questions.</p>
-                <div id="question_list">
-                    <div class="question">
-                        <details>
-                            <summary>What is the price of the courses ?</summary>
-                            <div class="response">
-                                <p>The price of the courses is indicated on each course, either on the sumary or in the course full page.</p>
-                            </div>
-                        </details>
-                    </div>
-                    <div class="question">
-                        <details>
-                            <summary>How long we will we keep access to the courses we buy ?</summary>
-                            <div class="response">
-                                <p>You will keep them for life !</p>
-                            </div>
-                        </details>
-                    </div>
-                    <div class="question">
-                        <details>
-                            <summary>Do you prefer pickles or biscuits ?</summary>
-                            <div class="response">
-                                <p>Oh.</p>
-                            </div>
-                        </details>
-                    </div>
-                    <div class="question">
-                        <details>
-                            <summary>What time is it ?</summary>
-                            <div class="response">
-                                <p>11:13 mardi 7 octobre 2025 (UTC+2) Heure (Pau)</p>
-                            </div>
-                        </details>
-                    </div>
-                    <div class="question">
-                        <details>
-                            <summary>What is the color of th Henry IV' white horse ?</summary>
-                            <div class="response">
-                                <p>I should put some age limitation on this website.</p>
-                            </div>
-                        </details>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+		<header class="flex vflex">
+			<div class="row flex vcenter hspacing">
+				<div id="logo">
+					<a
+						href="index.html"
+						aria-label="Accéder à la page d'accueil"
+					>
+						<img src="logo.png" alt="Logo of the website" />
+					</a>
+				</div>
+				<nav id="navbar-links" class="flex" role="navigation">
+					<a
+						href="index.html"
+						class="button"
+						aria-label="Accéder à la page d'accueil"
+						aria-current="page"
+						>Accueil</a
+					>
+					<a
+						href="courses.html"
+						class="button"
+						aria-label="Accéder à la page de Courses"
+						>Liste des formations</a
+					>
+					<a
+						href="aboutus.html"
+						class="button"
+						aria-label="Accéder à la page A propos"
+						>À propos</a
+					>
+					<a
+						href="contact.html"
+						class="button"
+						aria-label="Accéder à la page de Contact"
+						>Contact</a
+					>
+				</nav>
+				<div id="lang-selector">
+					<a href="/" class="button" aria-label="Changer la langue"
+						>FR</a
+					>
+				</div>
+			</div>
+			<div class="row flex vcenter hcenter">
+				<input
+					type="text"
+					placeholder="Search"
+					aria-label="Chercher une formation"
+				/>
+				<a href="/courses" class="button">Voir tous nos cours</a>
+			</div>
+		</header>
+		<div id="content">
+			<div class="content_element" id="presentation">
+				<div class="presentation_element">
+					<h1>We are there for you !</h1>
+					<p id="hero_text">
+						For larger organizations and businesses, Web development
+						teams can consist of hundreds of Web developers and
+						follow standard methods while developing Web sites. Web
+						development may be a collaborative effort between
+						departments rather than the domain of a designated
+						department. There are three kinds of Web developer
+						specialization: front-end developer, back-end developer,
+						and full-stack developer. Front-end developers are
+						responsible for behavior and visuals that run in the
+						user browser, while back-end developers deal with the
+						servers. Since the commercialization of the Web, the
+						industry has boomed and has become one of the most used
+						technologies ever. That is where our website comes from,
+						that need to help you find your place in this the best
+						way possible !
+					</p>
+				</div>
+				<div
+					class="presentation_element"
+					class="img_container"
+					id="hero_img"
+				>
+					<img
+						src="./img/happy.jpg"
+						alt="Happy girl jumping"
+						aria-hidden="true"
+					/>
+				</div>
+			</div>
+			<div class="content_element" id="main_courses">
+				<h2>Popular courses</h2>
+				<div id="course_list">
+					<div class="course">
+						<div class="img_container" class="course_elt">
+							<img
+								src="./html5.png"
+								aria-hidden="true"
+								alt="HTML5 logo"
+							/>
+						</div>
+						<h4 class="course_elt">HTML Course</h4>
+						<p class="course_elt">
+							This is a course about html and it's cool
+						</p>
+						<button
+							type="button"
+							onclick="location.href='singlecourse.html'"
+							aria-label="Details of the course"
+							class="course_elt"
+						>
+							See more
+						</button>
+						<div class="details" class="course_elt">
+							<p>07/10/2025</p>
+							<p>250€</p>
+						</div>
+					</div>
+					<div class="course">
+						<div class="img_container" class="course_elt">
+							<img
+								src="./css.png"
+								aria-hidden="true"
+								alt="CSS logo"
+							/>
+						</div>
+						<h4 class="course_elt">CSS Course</h4>
+						<p class="course_elt">
+							This is a course about CSS and it rocks
+						</p>
+						<button
+							type="button"
+							onclick="location.href='singlecourse.html'"
+							aria-label="Details of the course"
+							class="course_elt"
+						>
+							See more
+						</button>
+						<div class="details" class="course_elt">
+							<p>07/10/2025</p>
+							<p>250€</p>
+						</div>
+					</div>
+					<div class="course">
+						<div class="img_container" class="course_elt">
+							<img
+								src="./js.png"
+								aria-hidden="true"
+								alt="Javascript logo"
+							/>
+						</div>
+						<h4 class="course_elt">Javascript Course</h4>
+						<p class="course_elt">
+							This is a course about javascript and it's huge
+						</p>
+						<button
+							type="button"
+							onclick="location.href='singlecourse.html'"
+							aria-label="Details of the course"
+							class="course_elt"
+						>
+							See more
+						</button>
+						<div class="details" class="course_elt">
+							<p>07/10/2025</p>
+							<p>250€</p>
+						</div>
+					</div>
+				</div>
+				<div class="more_button">
+					<button
+						type="button"
+						onclick="location.href='courses.html'"
+						aria-label="See all the courses"
+					>
+						More courses
+					</button>
+				</div>
+			</div>
+			<div class="content_element" id="main_videos">
+				<h2>Our videos</h2>
+				<div id="video_list">
+					<div class="video">
+						<div class="vid_container" class="video_elt">
+							<iframe
+								title="Create collapsible sidebar nav in figma"
+								src="https://www.youtube.com/embed/CzOgO51u-j4"
+							></iframe>
+						</div>
+						<h3 class="video_elt">
+							Create collapsible sidebar nav in figma
+						</h3>
+						<p class="video_elt">
+							Learn how to create some fancy tools in Figma !
+						</p>
+					</div>
+					<div class="video">
+						<div class="vid_container" class="video_elt">
+							<iframe
+								title="Maitriser chat gpt en 10 minutes"
+								src="https://www.youtube.com/embed/oeli5xkFZJo"
+							></iframe>
+						</div>
+						<h3 class="video_elt">
+							Maitriser chat gpt en 10 minutes
+						</h3>
+						<p class="video_elt">
+							Improve your skills and impress all your friend with
+							those tricks !
+						</p>
+					</div>
+				</div>
+				<div class="more_button">
+					<button aria-label="See all the videos">More videos</button>
+				</div>
+			</div>
+			<div class="content_element" id="faq">
+				<!--https://www.w3.org/TR/html-aria/#details for aria semantic on details tag-->
+				<h2>F. A. Q.</h2>
+				<p>Here are some frequently asked questions.</p>
+				<div id="question_list">
+					<div class="question">
+						<details>
+							<summary>
+								What is the price of the courses ?
+							</summary>
+							<div class="response">
+								<p>
+									The price of the courses is indicated on
+									each course, either on the sumary or in the
+									course full page.
+								</p>
+							</div>
+						</details>
+					</div>
+					<div class="question">
+						<details>
+							<summary>
+								How long we will we keep access to the courses
+								we buy ?
+							</summary>
+							<div class="response">
+								<p>You will keep them for life !</p>
+							</div>
+						</details>
+					</div>
+					<div class="question">
+						<details>
+							<summary>
+								Do you prefer pickles or biscuits ?
+							</summary>
+							<div class="response">
+								<p>Oh.</p>
+							</div>
+						</details>
+					</div>
+					<div class="question">
+						<details>
+							<summary>What time is it ?</summary>
+							<div class="response">
+								<p>
+									11:13 mardi 7 octobre 2025 (UTC+2) Heure
+									(Pau)
+								</p>
+							</div>
+						</details>
+					</div>
+					<div class="question">
+						<details>
+							<summary>
+								What is the color of th Henry IV' white horse ?
+							</summary>
+							<div class="response">
+								<p>
+									I should put some age limitation on this
+									website.
+								</p>
+							</div>
+						</details>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
