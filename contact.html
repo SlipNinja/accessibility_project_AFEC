@@ -3,62 +3,116 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-        <link href="navbar.css" rel="stylesheet" />
-        <link href="contact.css" rel="stylesheet" />
+		<link href="navbar.css" rel="stylesheet" />
+		<link href="contact.css" rel="stylesheet" />
 		<title>Formation</title>
 	</head>
 
 	<body>
-        <header class="flex vflex">
-        <div class="row flex vcenter hspacing">
-            <div id="logo">
-                <a href="index.html" aria-label="Accéder à la page d'accueil">
-                    <img src="logo.png" alt="Logo of the website" />
-                </a>
-            </div>
-            <nav id="navbar-links" title="Primary Menu">
-                <ul class="flex">
-                    <li><a href="index.html"   class="button">Accueil</a></li>
-                    <li><a href="courses.html" class="button" aria-current="page">Liste des formations</a></li>
-                    <li><a href="aboutus.html" class="button">À propos</a></li>
-                    <li><a href="contact.html" class="button">Contact</a></li>
-                </ul>
-            </nav>
-            <div id="lang-selector">
-                <a href="/" class="button" aria-label="Changer la langue" >FR</a>
-            </div>
-        </div>
-        <div class="row flex vcenter hcenter">
-            <input type="text" placeholder="Search" aria-label="Chercher une formation"/>
-            <a href="/courses" class="button">Voir tous nos courses</a>
-        </div>
-    </header>
-    <main id="content">
-        <h1>Nous Contacter</h1>
-        <form class="flex flex-col" action="" method="POST">
-            <section  class="flex flex-col">
-                <label for="nom">Nom</label>
-                <input type="text" placeholder="ex Doe" id="nom" aria-errormessage="err1" aria-invalid="true" required />
-                <span id="err1" class="errormessage">Error: Enter a valid last name</span>
-            </section>
-            <section  class="flex flex-col">
-                <label for="prenom">Prenom</label>
-                <input type="text" placeholder="ex Jane" id="prenom" aria-errormessage="err2" aria-invalid="true" required />
-                <span id="err2" class="errormessage">Error: Enter a valid name</span>
-            </section>
-            <section  class="flex flex-col">
-                <label for="email">Email</label>
-                <input type="email" placeholder="ex janedoe@gmail.com" id="email" aria-errormessage="err3" aria-invalid="true" required />
-                <span id="err3" class="errormessage">Error: Enter a valid email address</span>
-            </section>
-            <section  class="flex flex-col">
-                <label for="message">Message</label>
-                <textarea placeholder="ex janedoe@gmail.com" id="message" aria-errormessage="err4" aria-invalid="true" required></textarea>
-                <span id="err4" class="errormessage">Error: Enter a valid message</span>
-            </section>
-            <button>Envoyer</button>
-        </form>
-
-    </main>
-    </body>
+		<header class="flex vflex">
+			<div class="row flex vcenter hspacing">
+				<div id="logo">
+					<a
+						href="index.html"
+						aria-label="Accéder à la page d'accueil"
+					>
+						<img src="logo.png" alt="Logo of the website" />
+					</a>
+				</div>
+				<nav id="navbar-links" title="Primary Menu">
+					<ul class="flex">
+						<li><a href="index.html" class="button">Accueil</a></li>
+						<li>
+							<a
+								href="courses.html"
+								class="button"
+								aria-current="page"
+								>Liste des formations</a
+							>
+						</li>
+						<li>
+							<a href="aboutus.html" class="button">À propos</a>
+						</li>
+						<li>
+							<a href="contact.html" class="button">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="lang-selector">
+					<a href="/" class="button" aria-label="Changer la langue"
+						>FR</a
+					>
+				</div>
+			</div>
+			<div class="row flex vcenter hcenter">
+				<input
+					type="text"
+					placeholder="Search"
+					aria-label="Chercher une formation"
+				/>
+				<a href="./courses.html" class="button">Voir tous nos cours</a>
+			</div>
+		</header>
+		<main id="content">
+			<h1>Nous Contacter</h1>
+			<form class="flex flex-col" action="" method="POST">
+				<section class="flex flex-col">
+					<label for="nom">Nom</label>
+					<input
+						type="text"
+						placeholder="ex Doe"
+						id="nom"
+						aria-errormessage="err1"
+						aria-invalid="true"
+						required
+					/>
+					<span id="err1" class="errormessage"
+						>Error: Enter a valid last name</span
+					>
+				</section>
+				<section class="flex flex-col">
+					<label for="prenom">Prenom</label>
+					<input
+						type="text"
+						placeholder="ex Jane"
+						id="prenom"
+						aria-errormessage="err2"
+						aria-invalid="true"
+						required
+					/>
+					<span id="err2" class="errormessage"
+						>Error: Enter a valid name</span
+					>
+				</section>
+				<section class="flex flex-col">
+					<label for="email">Email</label>
+					<input
+						type="email"
+						placeholder="ex janedoe@gmail.com"
+						id="email"
+						aria-errormessage="err3"
+						aria-invalid="true"
+						required
+					/>
+					<span id="err3" class="errormessage"
+						>Error: Enter a valid email address</span
+					>
+				</section>
+				<section class="flex flex-col">
+					<label for="message">Message</label>
+					<textarea
+						placeholder="ex janedoe@gmail.com"
+						id="message"
+						aria-errormessage="err4"
+						aria-invalid="true"
+						required
+					></textarea>
+					<span id="err4" class="errormessage"
+						>Error: Enter a valid message</span
+					>
+				</section>
+				<button>Envoyer</button>
+			</form>
+		</main>
+	</body>
 </html>
