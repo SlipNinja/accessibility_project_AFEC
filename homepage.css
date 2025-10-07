@@ -47,6 +47,10 @@ h1,
 	flex: 2;
 }
 
+#hero_text {
+	line-height: 150%;
+}
+
 #main_courses,
 #main_videos,
 #faq {

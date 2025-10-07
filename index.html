@@ -10,46 +10,36 @@
 
 	<body>
         <header class="flex vflex">
-        <div class="row flex vcenter hspacing">
-            <div id="logo">
-                <a href="/" aria-label="Accéder à la page d'accueil">
-                    <img src="logo.png" alt="Logo of the website" />
-                </a>
+            <div class="row flex vcenter hspacing">
+                <div id="logo">
+                    <a href="/" aria-label="Accéder à la page d'accueil">
+                        <img src="logo.png" alt="Logo of the website" />
+                    </a>
+                </div>
+                <nav id="navbar-links" class="flex" role="navigation">
+                    <a href="index.html"   class="button" aria-label="Accéder à la page d'accueil" aria-current="page">Accueil</a>
+                    <a href="courses.html" class="button" aria-label="Accéder à la page de Courses">Liste des formations</a>
+                    <a href="aboutus.html" class="button" aria-label="Accéder à la page A propos">À propos</a>
+                    <a href="contact.html" class="button" aria-label="Accéder à la page de Contact">Contact</a>
+                </nav>
+                <div id="lang-selector">
+                    <a href="/" class="button" aria-label="Changer la langue" >FR</a>
+                </div>
             </div>
-            <nav id="navbar-links" class="flex" role="navigation">
-                <a href="index.html"   class="button" aria-label="Accéder à la page d'accueil" aria-current="page">Accueil</a>
-                <a href="courses.html" class="button" aria-label="Accéder à la page de Courses">Liste des formations</a>
-                <a href="aboutus.html" class="button" aria-label="Accéder à la page A propos">À propos</a>
-                <a href="contact.html" class="button" aria-label="Accéder à la page de Contact">Contact</a>
-            </nav>
-            <div id="lang-selector">
-                <a href="/" class="button" aria-label="Changer la langue" >FR</a>
+            <div class="row flex vcenter hcenter">
+                <input type="text" placeholder="Search" aria-label="Chercher une formation"/>
+                <a href="/courses" class="button">Voir tous nos cours</a>
             </div>
-        </div>
-        <div class="row flex vcenter hcenter">
-            <input type="text" placeholder="Search" aria-label="Chercher une formation"/>
-            <a href="/courses" class="button">Voir tous nos courses</a>
-        </div>
-        
-    </header>
+            
+        </header>
         <div id="content">
             <div class="content_element" id="presentation">
                 <div class="presentation_element">
                     <h1>
-                        Some title presenting our website purpose and content
+                        We are there for you !
                     </h1>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with the release of
-                        Letraset sheets containing Lorem Ipsum passages, and
-                        more recently with desktop publishing software like
-                        Aldus PageMaker including versions of Lorem Ipsum.
+                    <p id="hero_text">
+                        For larger organizations and businesses, Web development teams can consist of hundreds of Web developers and follow standard methods while developing Web sites. Web development may be a collaborative effort between departments rather than the domain of a designated department. There are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer. Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers. Since the commercialization of the Web, the industry has boomed and has become one of the most used technologies ever. That is where our website comes from, that need to help you find your place in this the best way possible !
                     </p>
                 </div>
                 <div
@@ -58,8 +48,9 @@
                     id="hero_img"
                 >
                     <img
-                        src="./img/Unity_install.png"
-                        alt="Selection list of components to choose during the installation of Unity 2021.3.14f1"
+                        src="./img/happy.jpg"
+                        alt="Happy girl jumping"
+                        aria-hidden="true"
                     />
                 </div>
             </div>
@@ -69,16 +60,16 @@
                     <div class="course">
                         <div class="img_container" class="course_elt">
                             <img
-                                src="./img/Unity_install.png"
-                                alt="Selection list of components to choose during the installation of Unity 2021.3.14f1"
+                                src="./html5.png"
+                                aria-hidden="true"
+                                alt="HTML5 logo"
                             />
                         </div>
-                        <h4 class="course_elt">Course title</h4>
+                        <h4 class="course_elt">HTML Course</h4>
                         <p class="course_elt">
-                            This is a short description of the course describing
-                            how it's cool and how much you should try it
+                            This is a course about html and it's cool
                         </p>
-                        <button type="button" onclick="location.href='singlecourse.html'" aria-labelledby="See more" class="course_elt">See more</button>
+                        <button type="button" onclick="location.href='singlecourse.html'" aria-label="Details of the course" class="course_elt">See more</button>
                         <div class="details" class="course_elt">
                             <p>07/10/2025</p>
                             <p>250€</p>
@@ -87,16 +78,16 @@
                     <div class="course">
                         <div class="img_container" class="course_elt">
                             <img
-                                src="./img/Unity_install.png"
-                                alt="Selection list of components to choose during the installation of Unity 2021.3.14f1"
+                                src="./css.png"
+                                aria-hidden="true"
+                                alt="CSS logo"
                             />
                         </div>
-                        <h4 class="course_elt">Course title</h4>
+                        <h4 class="course_elt">CSS Course</h4>
                         <p class="course_elt">
-                            This is a short description of the course describing
-                            how it's cool and how much you should try it
+                            This is a course about CSS and it rocks
                         </p>
-                        <button type="button" onclick="location.href='singlecourse.html'" aria-labelledby="See more" class="course_elt">See more</button>
+                        <button type="button" onclick="location.href='singlecourse.html'" aria-label="Details of the course" class="course_elt">See more</button>
                         <div class="details" class="course_elt">
                             <p>07/10/2025</p>
                             <p>250€</p>
@@ -105,16 +96,16 @@
                     <div class="course">
                         <div class="img_container" class="course_elt">
                             <img
-                                src="./img/Unity_install.png"
-                                alt="Selection list of components to choose during the installation of Unity 2021.3.14f1"
+                                src="./js.png"
+                                aria-hidden="true"
+                                alt="Javascript logo"
                             />
                         </div>
-                        <h4 class="course_elt">Course title</h4>
+                        <h4 class="course_elt">Javascript Course</h4>
                         <p class="course_elt">
-                            This is a short description of the course describing
-                            how it's cool and how much you should try it
+                            This is a course about javascript and it's huge
                         </p>
-                        <button type="button" onclick="location.href='singlecourse.html'" aria-labelledby="See more" class="course_elt">See more</button>
+                        <button type="button" onclick="location.href='singlecourse.html'" aria-label="Details of the course" class="course_elt">See more</button>
                         <div class="details" class="course_elt">
                             <p>07/10/2025</p>
                             <p>250€</p>
@@ -122,7 +113,7 @@
                     </div>
                 </div>
                 <div class="more_button">
-                    <button type="button" onclick="location.href='courses.html'" aria-labelledby="More courses">More courses</button>
+                    <button type="button" onclick="location.href='courses.html'" aria-label="See all the courses">More courses</button>
                 </div>
             </div>
             <div class="content_element" id="main_videos">
@@ -132,10 +123,9 @@
                         <div class="vid_container" class="video_elt">
                             <iframe title="Create collapsible sidebar nav in figma" src="https://www.youtube.com/embed/CzOgO51u-j4"></iframe>
                         </div>
-                        <h3 class="video_elt">Create collapsible sidebar nav in figma</h4>
+                        <h3 class="video_elt">Create collapsible sidebar nav in figma</h3>
                         <p class="video_elt">
-                            This is a short description of the video describing
-                            how it's cool and how much you should see it
+                            Learn how to create some fancy tools in Figma !
                         </p>
                     </div>
                     <div class="video">
@@ -144,56 +134,56 @@
                         </div>
                         <h3 class="video_elt">Maitriser chat gpt en 10 minutes</h4>
                         <p class="video_elt">
-                            This is a short description of the video describing
-                            how it's cool and how much you should see it
+                            Improve your skills and impress all your friend with those tricks !
                         </p>
                     </div>
                 </div>
                 <div class="more_button">
-                    <button aria-labelledby="More videos">More videos</button>
+                    <button aria-label="See all the videos">More videos</button>
                 </div>
             </div>
             <div class="content_element" id="faq">
+                <!--https://www.w3.org/TR/html-aria/#details for aria semantic on details tag-->
                 <h2>F. A. Q.</h2>
                 <p>Here are some frequently asked questions.</p>
                 <div id="question_list">
                     <div class="question">
                         <details>
-                            <summary aria-label="Question">This is a question ?</summary>
+                            <summary>What is the price of the courses ?</summary>
                             <div class="response">
-                                <p aria-label="Response">This is an elaborated response that is very clear and negates all doubts left about the question !</p>
+                                <p>The price of the courses is indicated on each course, either on the sumary or in the course full page.</p>
                             </div>
                         </details>
                     </div>
                     <div class="question">
                         <details>
-                            <summary aria-label="Question">This is a second question ?</summary>
+                            <summary>How long we will we keep access to the courses we buy ?</summary>
                             <div class="response">
-                                <p aria-label="Response">This is an elaborated response that is very clear and negates all doubts left about the question !</p>
+                                <p>You will keep them for life !</p>
                             </div>
                         </details>
                     </div>
                     <div class="question">
                         <details>
-                            <summary aria-label="Question">This is a third question ?</summary>
+                            <summary>Do you prefer pickles or biscuits ?</summary>
                             <div class="response">
-                                <p aria-label="Response">This is an elaborated response that is very clear and negates all doubts left about the question !</p>
+                                <p>Oh.</p>
                             </div>
                         </details>
                     </div>
                     <div class="question">
                         <details>
-                            <summary aria-label="Question">This is a fourth question ?</summary>
+                            <summary>What time is it ?</summary>
                             <div class="response">
-                                <p aria-label="Response">This is an elaborated response that is very clear and negates all doubts left about the question !</p>
+                                <p>11:13 mardi 7 octobre 2025 (UTC+2) Heure (Pau)</p>
                             </div>
                         </details>
                     </div>
                     <div class="question">
                         <details>
-                            <summary aria-label="Question">This is a fith question ?</summary>
+                            <summary>What is the color of th Henry IV' white horse ?</summary>
                             <div class="response">
-                                <p aria-label="Response">This is an elaborated response that is very clear and negates all doubts left about the question !</p>
+                                <p>I should put some age limitation on this website.</p>
                             </div>
                         </details>
                     </div>
