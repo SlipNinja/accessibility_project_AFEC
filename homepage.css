@@ -12,6 +12,10 @@ h3 {
 	font-size: 24px;
 }
 
+h4 {
+	margin: 0;
+}
+
 #content {
 	display: flex;
 	flex-direction: column;
@@ -29,9 +33,15 @@ h3 {
 	display: flex;
 }
 
+@media (max-width: 700px) {
+	.content_element {
+		flex-direction: column;
+	}
+}
+
 #presentation {
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 
 .presentation_element {
@@ -43,8 +53,8 @@ h3 {
 
 h1,
 .presentation_element p {
-	padding-right: 10%;
-	padding-left: 10%;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 
 #hero_img {
@@ -67,8 +77,20 @@ h1,
 #question_list {
 	display: flex;
 	justify-content: space-around;
-	gap: 30px;
-	padding: 30px;
+	gap: 3%;
+	padding: 3%;
+}
+
+@media (max-width: 600px) {
+	#video_list,
+	#course_list {
+		flex-direction: column;
+	}
+
+	.video,
+	.course {
+		margin: 0 10%;
+	}
 }
 
 #question_list {
@@ -82,15 +104,10 @@ h1,
 	display: flex;
 	flex-direction: column;
 	padding: 3%;
-	gap: 20px;
+	gap: 5px;
 	background: #eee;
 	border-radius: 5px;
 	box-shadow: 1px 1px 3px 1px #704e1b;
-}
-
-.course_elt,
-.video_elt {
-	flex: 1;
 }
 
 .course button {
