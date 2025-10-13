@@ -124,22 +124,6 @@ h1,
 	padding: 3%;
 }
 
-@media (max-width: 800px) {
-	#video_list,
-	#course_list {
-		flex-direction: column;
-	}
-
-	.video,
-	.course {
-		margin: 0 10%;
-	}
-
-	.details {
-		visibility: collapse;
-	}
-}
-
 #question_list {
 	flex-direction: column;
 	align-items: center;
@@ -258,4 +242,20 @@ summary {
 
 #faq > p {
 	text-align: center;
+}
+
+@media (max-width: 800px) {
+	#video_list,
+	#course_list {
+		flex-direction: column;
+	}
+
+	.video,
+	.course {
+		margin: 0 10%;
+	}
+
+	.details {
+		display: none;
+	}
 }
