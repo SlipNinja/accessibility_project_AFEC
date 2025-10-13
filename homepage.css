@@ -29,7 +29,6 @@ h4 {
 }
 
 .content_element {
-	flex: 2;
 	display: flex;
 }
 
@@ -89,7 +88,7 @@ h1,
 
 	.video,
 	.course {
-		margin: 0 10%;
+		margin: 3% 10%;
 	}
 }
 
@@ -100,7 +99,6 @@ h1,
 
 .course,
 .video {
-	flex: 1;
 	display: flex;
 	flex-direction: column;
 	padding: 3%;
@@ -160,19 +158,18 @@ button.active {
 	color: white;
 }
 
-.more_button > button {
-	width: 10%;
-	padding: 1%;
-}
-
 .more_button {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+}
+
+.more_button > button {
+	width: 15%;
+	padding: 1%;
 }
 
 .question {
-	width: 50%;
+	width: 80%;
 }
 
 summary {
