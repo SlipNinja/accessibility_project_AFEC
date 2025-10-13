@@ -28,8 +28,16 @@ p {
 	padding-top: 4%;
 }
 
-.hidden {
-	display: none;
+/* 
+    Content accessible only for screen readers 
+    Minimize, move absolute position out of the screen and hide overflow
+*/
+.hidden_visual {
+	position: absolute;
+	left: -10000px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }
 
 .content_element {
